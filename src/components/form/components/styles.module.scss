@@ -1,0 +1,43 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  label {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  input {
+    padding: 0.6rem 1rem;
+    border: 0.5px solid #878787;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition-duration: 0.3s;
+    outline: 0.5px solid transparent;
+
+    &:focus {
+      outline: 1.5px solid #000;
+    }
+  }
+}
+
+.submitButton {
+  margin-top: 1rem;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0.4rem 0;
+  border: 1px solid transparent;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+  }
+}
