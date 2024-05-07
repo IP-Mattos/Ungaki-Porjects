@@ -2,6 +2,7 @@ import { NotificationProvider } from '@/context/NotificationContext'
 import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
 import './globals.css'
+import { Navbar } from '@/components/navbar/navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang='en'>
       <body className={inter.className}>
         <NotificationProvider>
-          <main className='min-h-screen flex flex-col items-center justify-center'>{children}</main>
+          <Navbar />
+          <main className='min-h-screen '>{children}</main>
         </NotificationProvider>
       </body>
     </html>

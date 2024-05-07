@@ -1,3 +1,4 @@
+
 import mongoose, { Schema, Document, ObjectId } from "mongoose";
 
 export interface IProducts {
@@ -22,10 +23,12 @@ export interface IProductsSchema extends Document {
 }
 
 const IProductsSchema: Schema = new Schema(
+
   {
     name: {
       type: String,
       required: true,
+
       unique: true,
     },
     category: {
@@ -50,3 +53,4 @@ const Products =
   mongoose.models.Products || mongoose.model("Products", IProductsSchema);
 
 export default Products;
+
